@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training +50 | Anamnese</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+         <img src="logo.png" alt="logo training +50" class="logo">
+        
+        <p>Conte- nos um pouco sobre você! 💚</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Anamnese</h2>
+            <p>Essas informações serão utilizadas para ajudar na personalização do seu treino.</p>
+
+            <form id="formAnamnese">
+                
+                <label for="peso">Peso (kg)</label>
+                <input
+                type="text"
+                id="peso"
+                name="peso"
+                placeholder="Ex:75"
+                inputmode="decimal"
+                required
+                >
+
+                <label for="altura">Altura (m)</label>
+                <input
+                type="text"
+                id="altura"
+                name="altura"
+                placeholder="Ex:1.65"
+                inputmode="decimal"
+                required
+                >
+
+                <label for="objetivo">Qual seu objetivo?</label>
+                <select
+                id="objetivo"
+                name="objetivo"
+                required
+                >
+                <option value="">Selecione seu objetivo</option>
+                <option value="emagrecimento">Diminuir alguns quilinhos.</option>
+                <option value="ganho_massa">Ganhar alguns quilinhos.</option>
+                <option value="condicionamento">Apenas melhorar minha disposição e/ou saúde.</option>
+                <option value="outro">Não sei ainda.</option>
+                </select>
+
+                <label for="nivel">Qual seu nível de experiência?</label>
+                <select
+                id="nivel"
+                name="nivel"
+                required
+                >
+                <option value="">Selecione seu nível</option>
+                <option value="iniciante">Iniciante- Não sei nem por onde começar.</option>
+                <option value="intermediario">Intermediário- Sei algumas coisas.</option>
+                <option value="avancado"> Avançado- Já conheço tudo!</option>
+                </select>
+
+                <label for="frequencia">Quantos dias por semana você pretende treinar?</label>
+                <select
+                id="frequencia"
+                name="frequencia"
+                required
+                >
+                <option value="">Selecione</option>
+                <option value="1">1 vez por semana</option>
+                <option value="2">2 ou 3 vezes por semana</option>
+                <option value="3">4 ou 5 vezes por semana</option>
+                <option value="4">6 ou 7 vezes por semana</option>
+                </select>
+
+                <label for="duracao">Quanto tempo você tem disponível por treino?</label>
+                <select
+                id="duracao"
+                name="duracao"
+                required
+                >
+                <option value="">Selecione</option>
+                <option value="15">Até 15 minutos</option>
+                <option value="30">Até 30 minutos</option>
+                <option value="45">Até 45 minutos</option>
+                <option value="1">Até 1 hora</option>
+                <option value="2">Mais de 1 hora</option>
+                </select>
+
+                <label for="preferencia">Que tipo de exercício você prefere?</label>
+                <select
+                id="preferencia"
+                name="preferencia"
+                required
+                >
+                <option value="">Selecione</option>
+                <option value="cardio">Prefiro fazer um cardio apenas</option>
+                <option value="alongamento">Prefiro fazer apenas alongamento e mobilidade</option>
+                <option value="misto">Gosto de fazer tudo</option>
+                <option value="outro">Não tenho preferência</option>
+                </select>
+
+                <label for="limitacoes">Você possui alguma limitação física ou restrição para realizar exercícios?</label>
+                <textarea id="limitacoes" name="limitacoes" rows="4"
+                placeholder="Descreva aqui:">
+                </textarea>
+
+                <label for="observacoes">Gostaria de descrever alguma outra observação?</label>
+                <textarea id="observacoes" name="observacoes" rows="4" placeholder="Digite aqui:">
+                </textarea>
+
+                <button type="submit">Continuar</button>
+                
+            
+                    
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

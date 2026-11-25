@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training +50 | Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+         <img src="logo.png" alt="logo training +50" class="logo">
+        
+        <p>Crie sua conta</p>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Cadastro:</h2>
+
+            <form id="formCadastro" action="anamnese.html">
+                <label for="nome">Nome completo:</label>
+                <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome completo"
+                required
+                >
+
+                <label for="telefone">Telefone:</label>
+                <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="Digite seu telefone"
+                required
+                >
+
+                <label for="dataNascimento">Data de nascimento:</label>
+                <input
+                type="date"
+                id="dataNascimento"
+                name="DataNascimento"
+                >
+
+
+                <label for="sexo">Sexo</label>
+                <select id="sexo" name="sexo">
+
+                <option value="">Selecione</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="outro">Outro/Prefiro não dizer</option>
+                </select>
+            
+
+                <label for="senha">Senha:</label>
+                <input
+                type="password"
+                id="senha"
+                name="senha"
+                placeholder="Digite sua senha:"
+                required
+                >
+
+                <label for="confirmarSenha">Confirmar senha:</label>
+                <input
+                type="password"
+                id="confirmarSenha"
+                name="confirmarSenha"
+                placeholder="Digite a senha novamente:"
+                required
+                >
+
+                <button type="submit">Criar conta</button>
+        
+            </form>
+
+            <p>Já possui conta?
+            <a href="index.html">Voltar para o login</a>
+            </p>
+         
+               
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
